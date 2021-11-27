@@ -53,6 +53,14 @@ Furthermore, a list of measure taken by the government, with date and detailed d
 
 Repeat `1.1` and `1.2`, except for more recent data and predict the impact of future social distancing measures.
 
+## Project Structure
+
+Folders other than the ones mention here are used internally or by developers and may be ignored.
+
+### `/matlab`
+
+This folder contains all the Matlab SIDARTHE simulation files from both the original paper as well as the adapted by us.
+
 ## Installation and Usage
 
 There are a few ways to use this project. You may proceed to either to the [System Installation and Usage Section](#system-installation-and-usage) or, if you rather use [Docker](https://www.docker.com), to the [Docker Installation and Usage section](#docker-installation-and-usage) section.
