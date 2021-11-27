@@ -73,7 +73,7 @@ This folder contains all of the collected data that will be used as input the **
 
 ### `/matlab`
 
-This folder contains all the Matlab SIDARTHE simulation files from both the original paper as well as the adapted by us.
+This folder contains all the Matlab SIDARTHE simulation files from both the original paper as well as the adapted by us. The adapted Matlab files end with `_pernambuco.m`. The name `pernambuco` refers to the Brazilian state to which the simulation was adapter for. If you are contributing to this project or want to simply input your data, you will most likely make changes to files in this folder.
 
 ### `/themis`
 
