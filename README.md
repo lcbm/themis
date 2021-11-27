@@ -57,6 +57,10 @@ Repeat `1.1` and `1.2`, except for more recent data and predict the impact of fu
 
 Folders other than the ones mention here are used internally or by developers and may be ignored.
 
+### `/data`
+
+This folder contains all of the collected data that will be used as input the **data transformation**, as well as all the generated (transformed) files that will be used as an input for further steps or even the Matlab simulation.
+
 ### `/matlab`
 
 This folder contains all the Matlab SIDARTHE simulation files from both the original paper as well as the adapted by us.
