@@ -20,9 +20,19 @@ This project proposes and adaptation of an epidemiological to the Pernambuco (Br
 
 This is the official roadmap for Themis. It gives an overview of future works and ideas that may be implemented in the project. This roadmap is subject to change and features will be added as needed.
 
-**[ ] 1.0**
+**[X] 1.0**
 
 Apply the SIDARTHE Covid-19 model, as is (including the dates), for the Pernambuco (Brazil) data.
+
+To achieve this, the following was incorporated to the project:
+
+- **data collection**: data was manually collected from [SDS PE (in portuguese: _Secretaria De Saúde de Pernambuco_)](https://dados.seplag.pe.gov.br/apps/corona_dados.html), under the **_Base Sintática_** tab, downloaded as a `CSV` file and can currently be found under `data/in/sdspe.csv`. There is also a `sdspe.pdf`, which is the data dictionary provided by the government. However, it is not reliable (see [this](https://ok.org.br/noticia/estudo-revela-que-quase-70-dos-dados-de-ocupacao-de-leitos-do-pais-tem-problemas/)).
+
+- **data transformation**: collect data was transformed to the input format expected by the SIDARTHE Covid-19 model. As an output of the data transformation, two files are created under `data/out`:
+
+  - `sdspe.csv`: `CSV` with transformed data, in the expected SIDARTHE format.
+
+  - `sidarthe.txt`: `TXT` with transformed data, in the expected SIDARTHE **Matlab** program format. Simply copy and paste these values to the files under `matlab` directory and run these simulations.
 
 **[ ] 1.1**
 
@@ -65,9 +75,19 @@ This folder contains all of the collected data that will be used as input the **
 
 This folder contains all the Matlab SIDARTHE simulation files from both the original paper as well as the adapted by us.
 
+### `/themis`
+
+This folder contains all the Python files related to the core of this project, which is **data transformation**, **parameter optimnization** and so on. If you are contributing to the project, you will most likely make changes to files in this folder.
+
 ## Installation and Usage
 
 There are a few ways to use this project. You may proceed to either to the [System Installation and Usage Section](#system-installation-and-usage) or, if you rather use [Docker](https://www.docker.com), to the [Docker Installation and Usage section](#docker-installation-and-usage) section.
+
+By the last step of both of these approaches, two files are created under `data/out`:
+
+- `sdspe.csv`: `CSV` with transformed data, in the expected SIDARTHE format.
+
+- `sidarthe.txt`: `TXT` with transformed data, in the expected SIDARTHE **Matlab** program format. Simply copy and paste these values to the files under `matlab` directory and run these simulations.
 
 ### System Installation and Usage
 
